@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="okvir">
+        <div class="displej">
+            <input type="text" class="unos" readonly style="cursor:inherit" onkeypress="return onlyNumberKey(event)"> 
+            <input type="text" class="resenje" readonly style="cursor:inherit">
+            <div class="undo">
+                <svg class="strelica" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+            </div>
+        </div>
+        <div class="operacije">
+            <button name="br"> + </button>
+            <button name="br"> - </button>
+            <button name="br"> * </button>
+            <button name="br"> / </button>
+            <button name="br"> = </button>
+        </div>
+
+        <div class="brojevi1">
+            <button name="br"> 1 </button>
+            <button name="br"> 2 </button>
+            <button name="br"> 3 </button>
+            <button name="br"> 4 </button>
+        </div>
+        <div class="brojevi2">
+            <button name="br"> 5 </button>
+            <button name="br"> 6 </button>
+            <button name="br"> 7 </button>
+            <button name="br"> 8 </button>
+        </div>
+        <div class="brojevi3">
+            <button name="br"> 9 </button>
+            <button name="br"> 0 </button>
+            <button name="br"> . </button>
+            <button name="br" class="del"> DEL </button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
